@@ -1,0 +1,131 @@
+{
+	"summary": "Summary about the profile",
+	"skills": [{
+		"skill": "YUI3",
+		"proficiency": 10
+	}, {
+		"skill": "Javascript",
+		"proficiency": 10
+	}, {
+		"skill": "Java",
+		"proficiency": 4
+	}, {
+		"skill": "J2EE",
+		"proficiency": 7
+	}, {
+		"skill": "ExtJS",
+		"proficiency": 6
+	}, {
+		"skill": "node",
+		"proficiency": 8
+	}, {
+		"skill": "HTML",
+		"proficiency": 6
+	}, {
+		"skill": "CSS",
+		"proficiency": 6
+	}, {
+		"skill": "JQuery",
+		"proficiency": 9
+	}, {
+		"skill": "ngular",
+		"proficiency": 6
+	}, {
+		"skill": "grunt",
+		"proficiency": 7
+	}, {
+		"skill": "webpac",
+		"proficiency": 7
+	}],
+	"timeline": [{
+		"time": "23 Nov 2013",
+		"title": "Relocated to US",
+		"description": "Moved to US on H1B. Working with WellsFargo on the payroll of Persistent Systems Inc.",
+    "checked": "checked"
+	}, {
+		"time": "22 Aug 2010",
+		"title": "Bondage",
+		"description": "Joined with the partner to make life more colourful and memorable. Got Married."
+	}, {
+		"time": "08 Feb 2006",
+		"title": "Professional Switch",
+		"description": "As part of career growth, shifted gears to Persistent Systems, Pune, India."
+	}, {
+		"time": "11 Aug 2004",
+		"title": "Professional Career",
+		"description": "Boraded my career flight with BoB Technologies, Bangalore, India"
+	}, {
+		"time": "Jun 2002",
+		"title": "Masters",
+		"description": "Completed post graduation in Computer Science from Osmania University"
+	}, {
+		"time": "Aug 2000",
+		"title": "Bachelors",
+		"description": "Completed Graduation in Computer Science from Osmania University"
+	}, {
+		"time": "24 Nov 1979",
+		"title": "Landed on Planet arth",
+		"description": ""
+	}],
+	"projects": [{
+		"title": "CEO Portal",
+		"duration": "April 2016 - tilldate",
+		"techs": ""
+	}, {
+		"title": "Fraud Manager",
+		"duration": "April 2014 - April 2016",
+		"techs": ""
+	}, {
+		"title": "CEO Portal",
+		"duration": "December 2013 - April 2014",
+		"techs": ""
+	}, {
+		"title": "Napier Health Care",
+		"duration": "May 2013 - November 2013",
+		"techs": ""
+	}, {
+		"title": "Health Benefit Services",
+		"duration": "October 2011 – March 2013",
+		"techs": ""
+	}, {
+		"title": "Human Identification",
+		"duration": "July 2011 – October 2011",
+		"techs": ""
+	}, {
+		"title": "WF Comm Center Portal FP R2.0",
+		"duration": "",
+		"techs": ""
+	}, {
+		"title": "WRIA",
+		"duration": "",
+		"techs": ""
+	}, {
+		"title": "Security Vulnerability Assessment Tool",
+		"duration": "",
+		"techs": ""
+	}, {
+		"title": "OwnIt.alive",
+		"duration": "",
+		"techs": ""
+	}, {
+		"title": "Clinportal",
+		"duration": "",
+		"techs": ""
+	}, {
+		"title": "BJC (Barnes-Jewish Hospitals)",
+		"duration": "",
+		"techs": ""
+	}, {
+		"title": "TMT (Test Case Management Tool)",
+		"duration": "",
+		"techs": ""
+	}, {
+		"title": "Brain Attack Prevention",
+		"duration": "",
+		"techs": ""
+	}, {
+		"title": "Operation Sanjeevini",
+		"duration": "",
+		"techs": ""
+	}]
+}

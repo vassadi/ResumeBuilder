@@ -1,0 +1,97 @@
+
+$numOfElement: 15;
+.mainContainer {
+  margin: 0 auto;
+  width:960px;
+  ul {
+    padding: 0 10px;
+    margin:0;
+    li {
+      list-style:none;
+      padding: 0;
+      margin:0;
+    }
+  }
+  h1 { font-size: 22px; margin:0; text-align: center;}
+}
+
+.slideHeader {
+  padding: 10px 5px 0 5px;
+  writing-mode: tb-rl;
+  font-weight: bold;
+  height: 100%;
+}
+
+.subHeader1, .subHeader2 {
+  vertical-align: top;
+  font-weight: bold;
+  top: 20px;
+  position: relative;
+  left: 20px;
+}
+
+.secondHeader {
+  position: relative;
+  left: -180px;
+  top: -99px;
+}
+
+
+@each $color in blue,red,white,green,purple {
+  .#{$color} { background-color: $color }
+}
+
+.listContainer {
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+
+  .details {
+    visibility: hidden;
+  }
+
+  li {
+    position: absolute;
+    display: inline-block;
+    width: 300px;
+    height: 400px;
+    transition: left 1s, width .8s;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: #006666;
+    background-position: top left;
+
+    &:hover {
+      background: linear-gradient(to right, #ffff00, #ffa000);
+      border: 1px solid red;
+      width: 500px;
+      cursor: pointer;
+
+      span.details {
+        visibility: visible;
+      }
+    }
+  }
+
+  @for $i from 1 through $numOfElement {
+    li:nth-child(#{$i}) {
+
+      left: 50px*( $i - 1);
+      &:hover {
+        width: 500px;
+        span.slideHeader {
+          background: #cf0000 !important;
+          color: white;
+          text-align: center;
+          padding: 0 5px 0 5px
+        }
+
+      }
+      @for $q from ($i+1) to ($numOfElement + 1) {
+        &:hover ~ li:nth-child(#{$q}) {
+          left: (50px*( $i - 1)) + 400 + (20 * $q);
+        }
+      }
+    }
+  }
+}
