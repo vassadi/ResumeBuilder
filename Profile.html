@@ -2,189 +2,10 @@
 <html>
 <head>
   <!-- inject:css -->
-  <link rel="stylesheet" href="/dist/css/all.ac0a2398.css">
+  <link rel="stylesheet" href="/dist/css/all.656b53d7.css">
   <!-- endinject -->
 
-  <style type="text/css">
-
-    @import url(http://fonts.googleapis.com/css?family=Noto+Sans);
-    body {
-      max-width: 1200px;
-      margin: 0 auto;
-      /*padding: 0 5%;*/
-      font-size: 100%;
-      font-family: "Noto Sans", sans-serif;
-      color: #eee9dc;
-      /*background: #48b379;*/
-    }
-    h2 {
-      margin: 3em 0 0 0;
-      font-size: 1.5em;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
-    /* -------------------------------------
- * timeline
- * ------------------------------------- */
-
-    #timeline {
-      list-style: none;
-      margin: 50px 0 30px 120px;
-      padding-left: 30px;
-      border-left: 8px solid #eee9dc;
-    }
-    #timeline li {
-      margin: 40px 0;
-      position: relative;
-    }
-    #timeline p {
-      margin: 0 0 15px;
-    }
-    .date {
-      margin-top: -10px;
-      top: 50%;
-      left: -158px;
-      font-size: 0.95em;
-      line-height: 20px;
-      position: absolute;
-    }
-    .circle1 {
-      margin-top: -10px;
-      top: 50%;
-      left: -44px;
-      width: 10px;
-      height: 10px;
-      background: #48b379;
-      border: 5px solid #eee9dc;
-      border-radius: 50%;
-      display: block;
-      position: absolute;
-    }
-    .content1 {
-      max-height: 20px;
-      padding: 50px 20px 0;
-      border-color: transparent;
-      border-width: 2px;
-      border-style: solid;
-      border-radius: 0.5em;
-      position: relative;
-    }
-    .content1:before,
-    .content1:after {
-      content: "";
-      width: 0;
-      height: 0;
-      border: solid transparent;
-      position: absolute;
-      pointer-events: none;
-      right: 100%;
-    }
-    .content1:before {
-      border-right-color: inherit;
-      border-width: 20px;
-      top: 50%;
-      margin-top: -20px;
-    }
-    .content1:after {
-      border-right-color: #48b379;
-      border-width: 17px;
-      top: 50%;
-      margin-top: -17px;
-    }
-    .content1 p {
-      max-height: 0;
-      color: transparent;
-      text-align: justify;
-      word-break: break-word;
-      hyphens: auto;
-      overflow: hidden;
-    }
-    label {
-      font-size: 1.3em;
-      position: absolute;
-      z-index: 100;
-      cursor: pointer;
-      top: 20px;
-      transition: transform 0.2s linear;
-    }
-    .radio {
-      display: none;
-    }
-    .radio:checked + .relative label {
-      cursor: auto;
-      transform: translateX(42px);
-    }
-    .radio:checked + .relative .circle1 {
-      background: #f98262;
-    }
-    .radio:checked ~ .content1 {
-      max-height: 180px;
-      border-color: #eee9dc;
-      margin-right: 20px;
-      transform: translateX(20px);
-      transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
-    }
-    .radio:checked ~ .content1 p {
-      max-height: 200px;
-      color: #eee9dc;
-      transition: color 0.3s linear 0.3s;
-    }
-    /* -------------------------------------
- * mobile phones (vertical version only)
- * ------------------------------------- */
-
-    @media screen and (max-width: 767px) {
-      #timeline {
-        margin-left: 0;
-        padding-left: 0;
-        border-left: none;
-      }
-      #timeline li {
-        margin: 50px 0;
-      }
-      label {
-        width: 85%;
-        font-size: 1.1em;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        display: block;
-        transform: translateX(18px);
-      }
-      .content1 {
-        padding-top: 45px;
-        border-color: #eee9dc;
-      }
-      .content1:before,
-      .content1:after {
-        border: solid transparent;
-        bottom: 100%;
-      }
-      .content1:before {
-        border-bottom-color: inherit;
-        border-width: 17px;
-        top: -16px;
-        left: 50px;
-        margin-left: -17px;
-      }
-      .content1:after {
-        border-bottom-color: #48b379;
-        border-width: 20px;
-        top: -20px;
-        left: 50px;
-        margin-left: -20px;
-      }
-      .content1 p {
-        font-size: 0.9em;
-        line-height: 1.4;
-      }
-      .circle1,
-      .date {
-        display: none;
-      }
-    }
-  </style>
-
+<style>@import url(http://fonts.googleapis.com/css?family=Noto+Sans);</style>
 </head>
 
 <body>
@@ -263,9 +84,9 @@
           <div class="relative">
             <label for='work{{$index}}'>{{event.title}}</label>
             <span class='date'>{{event.time}}</span>
-            <span class='circle1'></span>
+            <span class='tlcircle'></span>
           </div>
-          <div class='content1'>
+          <div class='tlcontent'>
             <p>
               {{event.description}}
             </p>

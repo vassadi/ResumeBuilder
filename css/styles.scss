@@ -1,13 +1,15 @@
-.nav {
-    background: #becccc;
-    ul {
-        list-style-type: none;
-        padding: 0;
-    }
-    li {
-        float: left;
-    }
-    a {
-        text-decoration: none;
-    }
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  /*padding: 0 5%;*/
+  font-size: 100%;
+  font-family: "Noto Sans", sans-serif;
+  color: #eee9dc;
+  /*background: #48b379;*/
+}
+h2 {
+  margin: 3em 0 0 0;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
